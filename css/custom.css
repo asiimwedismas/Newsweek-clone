@@ -1,0 +1,62 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 15px;
+}
+.bg-red {
+  background-color: red;
+}
+
+.red {
+  color: red;
+}
+
+.hover-red-underline-black-text:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: inherit;
+}
+
+.hover-no-underline-red-text:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.newsletter-bg-img {
+  background: url(../img/starting5-homepage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.magazine-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+.magazine-thumb-container {
+  position: relative;
+  padding-right: 90px;
+}
+
+.magazine-thumb.up-cover {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.link::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url("../img/link-arrow-right.svg") no-repeat;
+}
+
+.border {
+  background-origin: 2px solid purple;
+}

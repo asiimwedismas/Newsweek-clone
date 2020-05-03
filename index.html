@@ -8,7 +8,6 @@
     <!-- bootstrap cdn -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/bootstrap-related.css">
 </head>
 
 <body>
@@ -19,9 +18,9 @@
             <div></div>
         </div>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid px-5">
         <!-- in the magazine -->
-        <div class="magazine-part">
+        <div class="magazine-part d-none">
             <div>IN THE MAGAZINE</div>
             <div>
                 <div>
@@ -66,7 +65,7 @@
             </div>
         </div>
         <!-- editors editors-picks -->
-        <div class="editors-picks">
+        <div class="editors-picks d-none">
             <div class=""></span>EDITOR'S PICK</div>
             <div>
                 <article class="col-sm-6 col-md-3">
@@ -85,92 +84,113 @@
         </div>
         <!-- sections-part -->
         <div class="sections-part">
-            <section class="row">
-                <div class="block-title">
-                    <a href="#">U.S.</a></div>
-                <div>
+            <div class="row">
+                <div class="col-12"><a href="#" class="red font-weight-bold">U.S.</a></div>
+                <div class="col-lg-4 col-md-4">
                     <article>
-                        <div class="">
-                            <a href="#"><img src="img/sections-img.jpg">#</a>
-                        </div>
-                        <h4><a href="#">Trump's White Christian Support Falls Amid COVID-19 Lockdown: Poll</a></h4>
+                        <a href="#"><img class="img-fluid" src="img/sections-img.jpg"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
                     </article>
                 </div>
-                <div>
+                <div class="col-lg-4 col-md-4">
                     <article>
-                        <div class="">
-                            <a href="#"><img src="img/sections-img.jpg">#</a>
-                        </div>
-                        <h4><a href="#">Trump's White Christian Support Falls Amid COVID-19 Lockdown: Poll</a></h4>
+                        <a href="#"><img class="img-fluid" src="img/sections-img.jpg"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
                     </article>
                 </div>
-                <div class="">
+                <div class="col-lg-4 col-md-4">
                     <div class="">
-                        <ul>
-                            <li class="">
-                                <div class="">
-                                    <a href="#"><img src="img/coronavirus-starbucks-california-april-2020.webp"></a>
-                                </div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex pt-0 pb-2">
                                 <div>
-                                    <a href="#">Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
-                                        Vetting</a>
+                                    <a href="#" class="">
+                                        <img class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
                                 </div>
                             </li>
-                            <li class="">
-                                <div class="">
-                                    <a href="#"><img src="img/david-axelrod-biden-obama.webp"></a>
-                                </div>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
                                 <div>
-                                    <a href="#">Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
-                                        Vetting</a>
+                                    <a href="#" class="">
+                                        <img class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
                                 </div>
                             </li>
-                            <li class="">
-                                <div class="">
-                                    <a href="#"><img src="img/mega-millions.webp"></a>
-                                </div>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
                                 <div>
-                                    <a href="#">Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
-                                        Vetting</a>
+                                    <a href="#" class="">
+                                        <img class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
                                 </div>
                             </li>
+
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
         <!-- subscribe row -->
         <div class="subscribe">
-            <div class="">
+            <div class="row">
                 <!-- subscribe -->
-                <div class="">
-                    <div class="">Subscribe</div>
-                    <div class="">
-                        <div class="">
-                            <div class="mag-thumb prev">
-                                <img src="img/subscribe-cover-2.jpg">
+                <div class="col-md-12 col-lg-8">
+                    <div class="text-uppercase red font-weight-bold pb-2">Subscribe</div>
+                    <div class="d-flex p-4">
+                        <div class="magazine-thumb-container">
+                            <div class="magazine-thumb under-cover">
+                                <img class="img-fluid" src="img/subscribe-cover-2.jpg">
                             </div>
-                            <div class="mag-thumb current">
-                                <img src="img/subscribe-cover.jpg">
+                            <div class="magazine-thumb up-cover">
+                                <img class="img-fluid" src="img/subscribe-cover.jpg">
                             </div>
                         </div>
-                        <div class="">
+                        <div class="col p-3">
                             <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
                             <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
-                            <a href="#" #><span class="lk red">Subscribe</span></a>
+                            <a href="#"><span
+                                    class="link bg-red text-light font-weight-bold text-uppercase pt-2 pr-2 pb-2 pl-3 d-inline-block">Subscribe</span></a>
                         </div>
                     </div>
                 </div>
                 <!-- NEWSLETTER -->
-                <div class="">
-                    <div class="">NEWSLETTER</div>
-                    <div class="">
-                        <div class=""></div> <!-- div to contain background image for subscribe -->
-                        <div class="">
+                <div class="col-md-12 col-lg-4">
+                    <div class="text-uppercase red font-weight-bold pb-2">NEWSLETTER</div>
+                    <div class="d-flex">
+                        <div class="newsletter-bg-img col"></div>
+                        <!-- div to contain background image for subscribe -->
+                        <div class="col p-3 border">
                             <h3>The Starting 5</h3>
                             <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.
                             </p>
-                            <a href="#"><span>Sign Up</span></a>
+                            <a href="#"><span
+                                    class="link bg-red text-light font-weight-bold text-uppercase pt-2 pr-2 pb-2 pl-3 d-inline-block">Sign
+                                    Up</span></a>
                         </div>
                     </div>
                 </div>
