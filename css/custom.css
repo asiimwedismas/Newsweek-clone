@@ -25,11 +25,23 @@ html {
   color: red;
 }
 
+.ab-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
 .newsletter-bg-img {
-  background: url(../img/starting5-homepage.png);
+  background: url("../img/starting5-homepage.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.n-icon {
+  display: inline-block;
+  width: 29px;
+  height: 28px;
+  background: url("../img/n-icon.svg") center/contain no-repeat red;
+  margin-right: 10px;
 }
 
 .magazine-thumb {
