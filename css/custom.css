@@ -5,6 +5,7 @@ a {
 
 html {
   font-size: 15px;
+  line-height: 20px;
 }
 .bg-red {
   background-color: red;
@@ -28,6 +29,27 @@ html {
 .ab-bottom-left {
   bottom: 0;
   left: 0;
+}
+
+.opinon-thumbnail {
+  width: 63px;
+  height: 63px;
+}
+
+.the-debate-thumbnail {
+  width: 95px;
+  height: 95px;
+}
+
+.c-vs {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
 }
 
 .newsletter-bg-img {
