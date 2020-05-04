@@ -11,6 +11,12 @@ html {
   background-color: red;
 }
 
+.bg-some-color {
+  background-color: #c2d4d7;
+  padding: 0 6px;
+  font-size: 14px;
+}
+
 .red {
   color: red;
 }
@@ -24,6 +30,11 @@ html {
 .hover-no-underline-red-text:hover {
   text-decoration: none;
   color: red;
+}
+
+.hover-no-effect:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .ab-bottom-left {
@@ -50,6 +61,18 @@ html {
   font: bold 14px/40px "Roboto Condensed", sans-serif;
   text-align: center;
   margin: 14px auto 18px;
+}
+
+.title {
+  color: #272727;
+  font: 20px/22px "Lora", serif;
+  margin-bottom: 10px;
+}
+
+.summary {
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+  margin-bottom: 10px;
 }
 
 .newsletter-bg-img {
@@ -89,8 +112,4 @@ html {
   height: 14px;
   margin-left: 10px;
   background: url("../img/link-arrow-right.svg") no-repeat;
-}
-
-.border {
-  background-origin: 2px solid purple;
 }
