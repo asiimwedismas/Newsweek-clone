@@ -12,6 +12,7 @@ html {
   font-size: 15px;
   line-height: 20px;
 }
+
 .bg-red {
   background-color: red;
 }
@@ -113,6 +114,7 @@ html {
   background-position: center;
   background-size: cover;
 }
+
 .n-icon {
   display: inline-block;
   width: 29px;
@@ -164,7 +166,7 @@ html {
 
 .header-bottom::before {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -11px;
   content: "";
   display: block;
