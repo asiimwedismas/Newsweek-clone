@@ -151,3 +151,15 @@ html {
 .radius-0 {
   border-radius: 0;
 }
+
+.header-bottom::before {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  content: "";
+  display: block;
+  width: 66px;
+  background-color: red;
+  border-left: 13px solid white;
+  border-top: 13px solid red;
+}
