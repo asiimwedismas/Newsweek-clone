@@ -140,3 +140,14 @@ html {
   margin-left: 10px;
   background: url("../img/link-arrow-right.svg") no-repeat;
 }
+
+.weather-icon {
+  vertical-align: text-top;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.radius-0 {
+  border-radius: 0;
+}
