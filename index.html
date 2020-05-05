@@ -16,9 +16,9 @@
     <header class="pb-3">
 
         <div class="mx-1 top-nav position-relative">
-            <div class="header-top bg-red d-flex justify-content-between align-items-end py-3 text-white px-3">
+            <div class="header-top bg-red row justify-content-between align-items-end py-3 text-white px-3">
                 <!-- weather -->
-                <div>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
                     <div class="">
                         <a href="#" class="font-weight-bold">
                             <img src="img/28.png" alt="" class="weather-icon d-inline-block align-bottom">
@@ -28,12 +28,12 @@
                         </a>
                     </div>
                     <!-- date -->
-                    <div>
+                    <div class="d-none d-lg-block d-xl-block">
                         <date class="mt-1 d-block">Tue, May 05, 2020</date>
                     </div>
                 </div>
                 <!-- brand log -->
-                <div class="header-middle csol">
+                <div class="header-middle d-inline-block col top-logo">
                     <a class="" href="#">
                         <svg class="w-100" style="fill: white;" version="1.1" id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -48,17 +48,18 @@
                     </a>
                 </div>
                 <!-- buttons -->
-                <div class="font-weight-bold navbar-right">
-                    <button class="py-1 text-uppercase font-weight-bold btn text-white navbar-btn">Login</button>
+                <div class="font-weight-bold">
                     <button
-                        class="radius-0 py-1 text-uppercase link font-weight-bold bg-white red btn navbar-btn mr-2">SUBSCRIBE</button>
-                    <span class="fa fa-menu"></span>
+                        class="d-inline-block py-1 text-uppercase font-weight-bold btn text-white navbar-btn">Login</button>
+                    <button
+                        class="link-red-arrow d-inline-block radius-0 py-1 text-uppercase link font-weight-bold bg-white red btn navbar-btn mr-2">SUBSCRIBE</button>
+                    <span class="align-middle d-inline-block fa fa-bars d-lg-none d-xl-none"></span>
                 </div>
             </div>
         </div>
 
 
-        <nav class="header-bottom navbar-nav position-relative pt-3">
+        <nav class="header-bottom navbar-nav position-relative pt-3 d-none d-lg-block d-xl-block">
             <ul class="nav navbar font-weight-bold">
                 <li class=""><a class="border-right pr-4 d-block" href="microverse.org/us">U.S.</a></li>
                 <li class=""><a class="border-right pr-4 d-block" href="microverse.org/world">World</a></li>
@@ -908,7 +909,7 @@
                 <span class="text-uppercase font-weight-bold d-inline-block align-text-top">in the magazine</span>
             </div>
             <div class="row">
-                <div class="col-md-3 col-lg-3 col-xl-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <div>
                         <div class="position-relative">
                             <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-2 px-3 position-absolute"
@@ -921,7 +922,7 @@
                             Features</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <article>
                         <div>
                             <div><a href="#"><img class="img-fluid w-100" src="img/classof2020.webp"></a></div>
@@ -936,7 +937,7 @@
                                 Nowhere to Go</a></h3>
                     </article>
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <article>
                         <div>
                             <div><a href="#"><img class="img-fluid w-100"
@@ -952,7 +953,7 @@
                                 Nowhere to Go</a></h3>
                     </article>
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <article>
                         <div>
                             <div><a href="#"><img class="img-fluid w-100" src="img/fe-giving-pledge-banner.webp"></a>
@@ -970,7 +971,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <article>
                         <div>
                             <div><a href="#"><img class="img-fluid w-100" src="img/fe-class-of-2020-sb-banner.webp"></a>
@@ -986,7 +987,7 @@
                                 Nowhere to Go</a></h3>
                     </article>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <article>
                         <div>
                             <div><a href="#"><img class="img-fluid w-100" src="img/us-president-donald-trump.webp"></a>
@@ -1002,7 +1003,7 @@
                                 Nowhere to Go</a></h3>
                     </article>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <article>
                         <div>
                             <div><a href="#"><img class="img-fluid w-100"
@@ -1018,7 +1019,7 @@
                                 Nowhere to Go</a></h3>
                     </article>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
                     <div>
                         <div class="position-relative">
                             <a class="hover-no-underline-red-text ab-bottom-left text-white bg-red font-weight-bold py-1 px-3 position-absolute"
@@ -1039,7 +1040,7 @@
                     PICK</span>
             </div>
             <div class="row">
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1053,7 +1054,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1067,7 +1068,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1081,7 +1082,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1095,7 +1096,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1109,7 +1110,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1123,7 +1124,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
@@ -1137,7 +1138,7 @@
                         an unconstitutional executive order."
                     </p>
                 </article>
-                <article class="col-md-6 col-lg-3 col-xl-3">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
                     <div class="position-relative">
                         <a href="/us"
                             class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>

@@ -3,6 +3,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 html {
   font-size: 15px;
   line-height: 20px;
@@ -132,13 +137,18 @@ html {
   left: 80px;
 }
 
-.link::after {
+.link::after,
+.link-red-arrow::after {
   content: "";
   display: inline-block;
   width: 8px;
   height: 14px;
   margin-left: 10px;
   background: url("../img/link-arrow-right.svg") no-repeat;
+}
+
+.link-red-arrow::after {
+  background: url("../img/icon-arrow-right-red.svg") no-repeat;
 }
 
 .weather-icon {
@@ -155,11 +165,32 @@ html {
 .header-bottom::before {
   position: absolute;
   top: 0px;
-  right: 4px;
+  right: -11px;
   content: "";
   display: block;
   width: 66px;
   background-color: red;
   border-left: 13px solid white;
   border-top: 13px solid red;
+}
+
+.form-control {
+  background: url("../img/icon-search-glass.svg") center/contain no-repeat white;
+  background-size: 20px;
+}
+
+.top-logo {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .top-logo {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .top-logo {
+    max-width: 200px;
+  }
 }
