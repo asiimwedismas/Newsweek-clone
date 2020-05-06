@@ -32,7 +32,7 @@ html {
 }
 
 .color-666 {
-  color: #666666;
+  color: #666;
 }
 
 .brand svg {
@@ -77,7 +77,6 @@ html {
 
 .hover-darken:hover {
   color: black !important;
-  /* font-weight: 500; */
 }
 
 .ab-bottom-left {
