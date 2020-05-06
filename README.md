@@ -14,7 +14,7 @@ This project required me to build a replica of the news site Newsweek.com using 
 
 # Live Demo
 
-[Live demo](https://rawcdn.githack.com/asiimwedismas/Newsweek-clone/5779266b8539322fb936caa42e9d48927028a33f/index.html)
+[Live demo](https://rawcdn.githack.com/asiimwedismas/Newsweek-clone/4671255db15faebda3402e8d39b1ace4ca5753fe/index.html)
 
 # Authors
 
