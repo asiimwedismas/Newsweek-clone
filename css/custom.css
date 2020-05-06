@@ -31,6 +31,10 @@ html {
   color: red;
 }
 
+.color-666 {
+  color: #666666;
+}
+
 .brand svg {
   width: 236px;
   height: 36px;
@@ -65,9 +69,15 @@ html {
   color: red;
 }
 
-.hover-no-effect:hover {
+.hover-no-effect:hover,
+.hover-darken:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.hover-darken:hover {
+  color: black !important;
+  /* font-weight: 500; */
 }
 
 .ab-bottom-left {
