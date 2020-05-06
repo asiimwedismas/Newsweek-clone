@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Newsweek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<!-- beffore messing up stuff commit -->
+
+<body>
+    <header class="pb-3">
+
+        <div class="mx-1 top-nav position-relative">
+            <div class="header-top bg-red row justify-content-between align-items-end py-3 text-white px-3">
+                <!-- weather -->
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                    <div class="">
+                        <a href="#" class="font-weight-bold">
+                            <img alt="d" src="img/28.png" class="weather-icon d-inline-block align-bottom">
+                            <span class=" weather-country d-inline-block align-baseline">&nbsp;&nbsp;23° Kampala
+                                District, UG&nbsp;&nbsp; </span>
+                            <img alt="d" src="img/ic-white-arrow.png"
+                                class="weather-arrow d-inline-block align-baseline">
+                        </a>
+                    </div>
+                    <!-- date -->
+                    <div class="d-none d-lg-block d-xl-block">
+                        <span class="mt-1 d-block">Tue, May 05, 2020</span>
+                    </div>
+                </div>
+                <!-- brand log -->
+                <div class="header-middle d-inline-block col top-logo">
+                    <a class="" href="#">
+                        <svg class="w-100" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                            style="fill: white; enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                            <g>
+                                <path class="st0"
+                                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <!-- buttons -->
+                <div class="font-weight-bold">
+                    <button
+                        class="d-inline-block py-1 text-uppercase font-weight-bold btn text-white navbar-btn">Login</button>
+                    <button
+                        class="link-red-arrow d-inline-block radius-0 py-1 text-uppercase link font-weight-bold bg-white red btn navbar-btn mr-2">SUBSCRIBE</button>
+                    <span class="align-middle d-inline-block fa fa-bars d-lg-none d-xl-none"></span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-bottom navbar-nav position-relative pt-2 d-none d-lg-block d-xl-block">
+            <ul class="nav navbar font-weight-bold">
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/us">U.S.</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/world">World</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/business">Business</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/tech-science">Tech &amp;
+                        Science</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/culture">Culture</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/newsgeek">Newsgeek</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/sports">Sports</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/health">Health</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/the-debate">The Debate</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/vantage">Vantage</a></li>
+                <li class=""><a class="border-right pr-4 d-block" href="microverse.org/weather">Weather</a></li>
+                <li>
+                    <form action="microverse.org/search/site/" class="form-inline">
+                        <input placeholder="Search" type="text" name="somename" value="" class="form-control border-0">
+                    </form>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <!-- TOP MESSED UP SECTION -->
+        <div class="top-section">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <!-- FEATURED -->
+                        <div class="col-lg-5 col-md-5">
+
+                            <div class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+                                <div class="text-uppercase font-weight-bold text-black-50 pb-2">top story</div>
+                                <article>
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/trump-xi.webp"></a>
+                                    </div>
+                                    <h3>
+                                        <a href="#" class="hover-red-underline-black-text">China Hid Severity of
+                                            Coronavirus
+                                            Outbreak to Hoard Supplies: DHS Report</a>
+                                    </h3>
+                                    <p>
+                                        Beijing increased imports and decreased exports of medical supplies while
+                                        downplaying the severity of the virus,
+                                        according to the analysis.
+                                    </p>
+                                </article>
+                            </div>
+
+                            <div class="text-uppercase font-weight-bold text-black-50 pb-2">FEATURED STORIES</div>
+                            <article>
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                                    <a href="#" class=""><img alt="d" class="img-fluid w-100"
+                                            src="img/president-donald-trump-returns-camp-david.webp"></a>
+                                </div>
+                                <h3><a href="#" class="hover-red-underline-black-text">Majority Approve of Trump's
+                                        Handling of the Economy: Poll</a></h3>
+                                <p>
+                                    Polled voters were also found to be optimistic about the economy's future while they
+                                    remained split on the state of
+                                    their personal finances.
+                                </p>
+                            </article>
+
+                            <article>
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">WORLD</a>
+                                    <a href="#"><img alt="d" class="img-fluid  w-100"
+                                            src="img/mike-pompeo-china-coronavirus-lab-evidence-wuhan.webp"></a>
+                                </div>
+                                <h3><a href="#" class="hover-red-underline-black-text">Majority Approve of Trump's
+                                        Handling of the Economy: Poll</a></h3>
+                                <p>
+                                    Polled voters were also found to be optimistic about the economy's future while they
+                                    remained split on the state of
+                                    their personal finances.
+                                </p>
+                            </article>
+
+                            <article>
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">POLITICS</a>
+                                    <a href="#"><img alt="d" class="img-fluid w-100"
+                                            src="img/elizabeth-warren.webp"></a>
+                                </div>
+                                <h3><a href="#" class="hover-red-underline-black-text">Majority Approve of Trump's
+                                        Handling of the Economy: Poll</a></h3>
+                                <p>
+                                    Polled voters were also found to be optimistic about the economy's future while they
+                                    remained split on the state of
+                                    their personal finances.
+                                </p>
+                            </article>
+
+                            <article>
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">NEWS</a>
+                                    <a href="#"><img alt="d" class="img-fluid w-100"
+                                            src="img/us-president-donald-trump.webp"></a>
+                                </div>
+                                <h3><a href="#" class="hover-red-underline-black-text">Majority Approve of Trump's
+                                        Handling of the Economy: Poll</a></h3>
+                                <p>
+                                    Polled voters were also found to be optimistic about the economy's future while they
+                                    remained split on the state of
+                                    their personal finances.
+                                </p>
+                            </article>
+
+                            <article>
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                                    <a href="#"><img alt="d" class="img-fluid w-100"
+                                            src="img/president-donald-trump-returns-camp-david.webp"></a>
+                                </div>
+                                <h3><a href="#" class="hover-red-underline-black-text">Majority Approve of Trump's
+                                        Handling of the Economy: Poll</a></h3>
+                                <p>
+                                    Polled voters were also found to be optimistic about the economy's future while they
+                                    remained split on the state of
+                                    their personal finances.
+                                </p>
+                            </article>
+
+                            <div class="pt-4">
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-smokey text-primary  font-weight-bold py-1 px-4 position-absolute">SPONSORED
+                                        INSIGHT</a>
+                                    <a href="#"><img alt="d" class="img-fluid w-100"
+                                            src="img/newsweek2-gettyimages-955959130.jpg"></a>
+                                </div>
+                                <div class="border p-4">
+                                    <h3><a href="#" class="hover-red-underline-black-text">What Sets the Leading Liberal
+                                            Arts
+                                            Schools Apart?</a></h3>
+                                    <p>
+                                        There are a number of great Liberal Arts Schools in the USA today, but what
+                                        qualities do
+                                        the best of them have?
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- best schools -->
+                            <article class="pt-4">
+                                <div class="position-relative">
+
+                                    <a href="#"><img alt="d" class="img-fluid w-100"
+                                            src="img/worlds-best-hospitals-2020.png"></a>
+                                </div>
+                                <div class="border p-4">
+                                    <h3><a href="#" class="hover-red-underline-black-text">World's Best
+                                            Hospitals 2020</a>
+                                    </h3>
+                                    <p>
+                                        Newsweek partnered with Statista Inc. to rank the leading hospitals in 21
+                                        countries
+                                    </p>
+                                </div>
+                            </article>
+
+                            <div class="pt-4">
+                                <div class="position-relative">
+                                    <a href="/us"
+                                        class="hover-no-underline-red-text ab-bottom-left bg-smokey text-primary  font-weight-bold py-1 px-4 position-absolute">SPONSORED
+                                        INSIGHT</a>
+                                    <a href="#"><img alt="d" class="img-fluid w-100"
+                                            src="img/newsweek2-gettyimages-955959130.jpg"></a>
+                                </div>
+                                <div class="border p-4">
+                                    <h3><a href="#" class="hover-red-underline-black-text">What Sets the Leading Liberal
+                                            Arts
+                                            Schools Apart?</a></h3>
+                                    <p>
+                                        There are a number of great Liberal Arts Schools in the USA today, but what
+                                        qualities do
+                                        the best of them have?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of FEATURED -->
+                        <div class="col-lg-7 col-md-7">
+                            <div class="d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                <div class="text-uppercase font-weight-bold text-black-50 pb-2">top story</div>
+                                <article>
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/trump-xi.webp"></a>
+                                    </div>
+                                    <h3>
+                                        <a href="#" class="hover-red-underline-black-text">China Hid Severity of
+                                            Coronavirus
+                                            Outbreak to Hoard Supplies: DHS Report</a>
+                                    </h3>
+                                    <p>
+                                        Beijing increased imports and decreased exports of medical supplies while
+                                        downplaying the severity of the virus,
+                                        according to the analysis.
+                                    </p>
+                                </article>
+                            </div>
+
+                            <!-- heroes of the pandemic -->
+                            <div class="text-uppercase font-weight-bold text-black-50 pt-3 pb-2">heroes of the pandemic
+                            </div>
+                            <div class="row">
+                                <article class="col-lg-4 col-md-4">
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-effect text-capitalize ab-bottom-left bg-some-color position-absolute">Pandemic
+                                            heros</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                                src="img/zoe-monterola-founder-six-feet-supplies.webp"></a>
+                                    </div>
+                                    <h3><a href="#" class="title hover-no-effect">Congressional Candidate
+                                            Files
+                                            Recall Petition
+                                            for Arizona Governor </a></h3>
+                                    <p class="summary">
+                                        According to the Friday petition, Governor Ducey "committed a violation of his
+                                        oath by issuing
+                                        an unconstitutional executive order."
+                                    </p>
+                                </article>
+                                <article class="col-lg-4 col-md-4">
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-effect text-capitalize ab-bottom-left bg-some-color position-absolute">Pandemic
+                                            heros</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                                src="img/zoe-monterola-founder-six-feet-supplies.webp"></a>
+                                    </div>
+                                    <h3><a href="#" class="title hover-no-effect">Congressional Candidate
+                                            Files
+                                            Recall Petition
+                                            for Arizona Governor </a></h3>
+                                    <p class="summary">
+                                        According to the Friday petition, Governor Ducey "committed a violation of his
+                                        oath by issuing
+                                        an unconstitutional executive order."
+                                    </p>
+                                </article>
+                                <article class="col-lg-4 col-md-4">
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-effect text-capitalize ab-bottom-left bg-some-color position-absolute">Pandemic
+                                            heros</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                                src="img/zoe-monterola-founder-six-feet-supplies.webp"></a>
+                                    </div>
+                                    <h3><a href="#" class="title hover-no-effect">Congressional Candidate
+                                            Files
+                                            Recall Petition
+                                            for Arizona Governor </a></h3>
+                                    <p class="summary">
+                                        According to the Friday petition, Governor Ducey "committed a violation of his
+                                        oath by issuing
+                                        an unconstitutional executive order."
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- cultre and travel -->
+                            <div class="text-uppercase font-weight-bold text-black-50 pt-3 pb-2">cultre and travel
+                            </div>
+                            <div class="row">
+                                <article class="col-lg-4 col-md-4">
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-effect text-capitalize ab-bottom-left bg-some-color position-absolute">Pandemic
+                                            heros</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                                src="img/zoe-monterola-founder-six-feet-supplies.webp"></a>
+                                    </div>
+                                    <h3><a href="#" class="title hover-no-effect">Congressional Candidate
+                                            Files
+                                            Recall Petition
+                                            for Arizona Governor </a></h3>
+                                    <p class="summary">
+                                        According to the Friday petition, Governor Ducey "committed a violation of his
+                                        oath by issuing
+                                        an unconstitutional executive order."
+                                    </p>
+                                </article>
+                                <article class="col-lg-4 col-md-4">
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-effect text-capitalize ab-bottom-left bg-some-color position-absolute">Pandemic
+                                            heros</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                                src="img/zoe-monterola-founder-six-feet-supplies.webp"></a>
+                                    </div>
+                                    <h3><a href="#" class="title hover-no-effect">Congressional Candidate
+                                            Files
+                                            Recall Petition
+                                            for Arizona Governor </a></h3>
+                                    <p class="summary">
+                                        According to the Friday petition, Governor Ducey "committed a violation of his
+                                        oath by issuing
+                                        an unconstitutional executive order."
+                                    </p>
+                                </article>
+                                <article class="col-lg-4 col-md-4">
+                                    <div class="position-relative">
+                                        <a href="/us"
+                                            class="hover-no-effect text-capitalize ab-bottom-left bg-some-color position-absolute">Pandemic
+                                            heros</a>
+                                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                                src="img/zoe-monterola-founder-six-feet-supplies.webp"></a>
+                                    </div>
+                                    <h3><a href="#" class="title hover-no-effect">Congressional Candidate
+                                            Files
+                                            Recall Petition
+                                            for Arizona Governor </a></h3>
+                                    <p class="summary">
+                                        According to the Friday petition, Governor Ducey "committed a violation of his
+                                        oath by issuing
+                                        an unconstitutional executive order."
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- more news -->
+                            <div class="text-uppercase font-weight-bold text-black-50 pt-3 pb-2 border-bottom">more
+                                news
+                            </div>
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/amazon-protest.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                Amazon VP Resigns Over Firings of Coronavirus 'Whistleblowers'
+                                            </a>
+                                            <p>"It's evidence of a vein of toxicity running through the company culture.
+                                                I
+                                                choose neither to serve nor drink that
+                                                poison," said Tim Bray.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid"
+                                                    src="img/prince-andrew-visits-crossrail-london.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/mike-pompeo.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/gretchen-whitmer.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/amazon-protest.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                Amazon VP Resigns Over Firings of Coronavirus 'Whistleblowers'
+                                            </a>
+                                            <p>"It's evidence of a vein of toxicity running through the company culture.
+                                                I
+                                                choose neither to serve nor drink that
+                                                poison," said Tim Bray.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid"
+                                                    src="img/prince-andrew-visits-crossrail-london.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/mike-pompeo.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/gretchen-whitmer.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid"
+                                                    src="img/prince-andrew-visits-crossrail-london.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/mike-pompeo.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/gretchen-whitmer.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid"
+                                                    src="img/prince-andrew-visits-crossrail-london.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/mike-pompeo.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/gretchen-whitmer.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-2">
+                                        <div>
+                                            <a href="#">
+                                                <img alt="d" class="img-fluid" src="img/gretchen-whitmer.webp">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="hover-red-underline-black-text font-weight-bold">
+                                                White House Economic Adviser Warns 'It's Going to Be a Bad Summer'
+                                            </a>
+                                            <p>Stephen Moore projected unemployment would hit 15 to 20 percent in many
+                                                states.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right panel -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="opinons">
+                        <div class="text-uppercase font-weight-bold text-black-50 pb-2">opinon</div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex pt-0 pb-2">
+                                <div class="opinon-thumbnail">
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid" src="img/abdul-el-sayed.png">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Justin Amash Is No Anti-Trump Hero
+                                    </a>
+                                    <p class="font-weight-bold text-uppercase text-black-50"> By
+                                        Abdul El-Sayed
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div class="opinon-thumbnail">
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid" src="img/nigel-farage.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Justin Amash Is No Anti-Trump Hero
+                                    </a>
+                                    <p class="font-weight-bold text-uppercase text-black-50"> By
+                                        Abdul El-Sayed
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div class="opinon-thumbnail">
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid" src="img/newt-gingrich.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Justin Amash Is No Anti-Trump Hero
+                                    </a>
+                                    <p class="font-weight-bold text-uppercase text-black-50"> By
+                                        Abdul El-Sayed
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div class="opinon-thumbnail">
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/chris-lu-m-patricia-smith-david-weil.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Justin Amash Is No Anti-Trump Hero
+                                    </a>
+                                    <p class="font-weight-bold text-uppercase text-black-50"> By
+                                        Abdul El-Sayed
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of opinons -->
+                    <!-- the debate -->
+                    <div class="pt-3">
+                        <div class="text-uppercase font-weight-bold text-black-50 pb-2">the debate</div>
+                        <div class="d-flex border-top border-primary align-items-center pb-3"
+                            style="border-width: 4px!important; padding-top:1px">
+                            <div class="image the-debate-thumbnail">
+                                <a href="/trump-right-who-tedros-not-fit-purpose-1498363">
+                                    <img alt="d" class="img-fluid" src="img/big-ed.webp">
+                                </a></div>
+                            <div class="col font-weight-bold"><a href="/">Trump's Right. The WHO Is Not Fit for
+                                    Purpose</a></div>
+                        </div>
+                        <div class="position-relative border-top">
+                            <div class="text-uppercase border-top mt-1 pt-1"> <span class="text-black-50">By</span>
+                                <a href="#" class="font-weight-bold">Nigel Farage</a>
+                            </div>
+                            <div class="opinon-thumbnail position-absolute" style="top:-15px;right:0">
+                                <a href="#">
+                                    <img alt="d" class="img-fluid" src="img/hank-gilman.webp">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-vs text-center">VS</div>
+
+                        <div class="d-flex border-top border-danger align-items-center pb-3"
+                            style="border-width: 4px!important; padding-top:1px">
+                            <div class="image the-debate-thumbnail">
+                                <a href="/trump-right-who-tedros-not-fit-purpose-1498363">
+                                    <img alt="d" class="img-fluid" src="img/big-ed.webp">
+                                </a></div>
+                            <div class="col font-weight-bold"><a href="/">Trump's Right. The WHO Is Not Fit for
+                                    Purpose</a></div>
+                        </div>
+
+                        <div class="position-relative border-top">
+                            <div class="text-uppercase border-top mt-1 pt-1"> <span class="text-black-50">By</span>
+                                <a href="#" class="font-weight-bold">Nigel Farage</a>
+                            </div>
+                            <div class="opinon-thumbnail position-absolute" style="top:-15px;right:0">
+                                <a href="#">
+                                    <img alt="d" class="img-fluid" src="img/abdul-el-sayed.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of debate -->
+                    <!-- latest news -->
+                    <div class="pt-5">
+                        <div class="text-uppercase font-weight-bold text-black-50 pb-2">latest news</div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex pt-0 pb-2">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/billions-season-five-premiere-decas.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        'Billions' Season 5 Premiere Annotated: Every Reference in Episode 1
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/waiting-pulitzer-prize-this-year-youll-waiting-little-longer.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Waiting For a Pulitzer Prize? This Year You'll Be Waiting a Little Longer
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid" src="img/michigan-protest.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Rose and Big Ed Apparently Split on 'Before The 90 Days'
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid" src="img/coronavirus-work-home-america.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        'Hollywood' Ending Explained: What Happened at the End of the Netflix Show?
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of latest news -->
+                    <div class="pt-2">
+                        <div class="position-relative">
+                            <a href="/us"
+                                class="hover-no-underline-red-text ab-bottom-left bg-smokey text-primary  font-weight-bold py-1 px-4 position-absolute">SPONSORED
+                                INSIGHT</a>
+                            <a href="#"><img alt="d" class="img-fluid w-100"
+                                    src="img/newsweek2-gettyimages-955959130.jpg"></a>
+                        </div>
+                        <div class="border p-4">
+                            <h3><a href="#" class="hover-red-underline-black-text">What Sets the Leading Liberal Arts
+                                    Schools Apart?</a></h3>
+                            <p>
+                                There are a number of great Liberal Arts Schools in the USA today, but what qualities do
+                                the best of them have?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- signup add -->
+                    <div class="border p-4 mx-auto mt-4" style="max-width: 300px;">
+
+                        <div>
+                            <span class="n-icon align-middle d-inline-block align-text-bottom"></span>
+                            <span class="text-uppercase font-weight-bold d-inline-block align-text-bottom">SIGN
+                                UP
+                                FOR OUR<br> NEWSLETTER</span>
+                        </div>
+                        <a href="#" class="py-2 d-block">
+                            <span
+                                class="link bg-dark text-light font-weight-bold text-uppercase pt-2 pr-2 pb-2 pl-3 d-inline-block">Sign
+                                Up</span>
+                        </a>
+                        <a href="#" class="font-weight-bold">Update your preferences »</a>
+
+                    </div>
+
+                    <div class="pt-4">
+                        <div class="position-relative">
+                            <a href="/us"
+                                class="hover-no-underline-red-text ab-bottom-left bg-smokey text-primary  font-weight-bold py-1 px-4 position-absolute">SPONSORED
+                                INSIGHT</a>
+                            <a href="#"><img alt="d" class="img-fluid w-100"
+                                    src="img/newsweek2-gettyimages-955959130.jpg"></a>
+                        </div>
+                        <div class="border p-4">
+                            <h3><a href="#" class="hover-red-underline-black-text">What Sets the Leading Liberal Arts
+                                    Schools Apart?</a></h3>
+                            <p>
+                                There are a number of great Liberal Arts Schools in the USA today, but what qualities do
+                                the best of them have?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <div class="position-relative">
+                            <a href="/us"
+                                class="hover-no-underline-red-text ab-bottom-left bg-smokey text-primary  font-weight-bold py-1 px-4 position-absolute">SPONSORED
+                                INSIGHT</a>
+                            <a href="#"><img alt="d" class="img-fluid w-100"
+                                    src="img/newsweek2-gettyimages-955959130.jpg"></a>
+                        </div>
+                        <div class="border p-4">
+                            <h3><a href="#" class="hover-red-underline-black-text">What Sets the Leading Liberal Arts
+                                    Schools Apart?</a></h3>
+                            <p>
+                                There are a number of great Liberal Arts Schools in the USA today, but what qualities do
+                                the best of them have?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <div class="position-relative">
+                            <a href="/us"
+                                class="hover-no-underline-red-text ab-bottom-left bg-smokey text-primary  font-weight-bold py-1 px-4 position-absolute">SPONSORED
+                                INSIGHT</a>
+                            <a href="#"><img alt="d" class="img-fluid w-100"
+                                    src="img/newsweek2-gettyimages-955959130.jpg"></a>
+                        </div>
+                        <div class="border p-4">
+                            <h3><a href="#" class="hover-red-underline-black-text">What Sets the Leading Liberal Arts
+                                    Schools Apart?</a></h3>
+                            <p>
+                                There are a number of great Liberal Arts Schools in the USA today, but what qualities do
+                                the best of them have?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- in the magazine -->
+        <div class="magazine-part pt-4">
+            <div class="mb-3 pb-3 border-bottom text-center">
+                <span class="n-icon align-middle"></span>
+                <span class="text-uppercase font-weight-bold d-inline-block align-text-top">in the magazine</span>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <div>
+                        <div class="position-relative">
+                            <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-2 px-3 position-absolute"
+                                href="#">MAY 15 ISSUE</a>
+                            <a href="#"><img alt="d" class="img-fluid w-100" src="img/may-08-15-2020-cover.webp">
+                            </a>
+                        </div>
+                        <a href="#" class="link d-block text-center font-weight-bold text-uppercase py-2">See
+                            All
+                            Features</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <article>
+                        <div>
+                            <div><a href="#"><img alt="d" class="img-fluid w-100" src="img/classof2020.webp"></a></div>
+                            <div class="py-2">
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-red text-white font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                            </div>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">The Class of 2020 Is All Dressed Up With
+                                Nowhere to Go</a></h3>
+                    </article>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <article>
+                        <div>
+                            <div><a href="#"><img alt="d" class="img-fluid w-100"
+                                        src="img/wheaton-college-massachusetts.jpg"></a></div>
+                            <div class="py-2">
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-red text-white font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                            </div>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">The Class of 2020 Is All Dressed Up With
+                                Nowhere to Go</a></h3>
+                    </article>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <article>
+                        <div>
+                            <div><a href="#"><img alt="d" class="img-fluid w-100"
+                                        src="img/fe-giving-pledge-banner.webp"></a>
+                            </div>
+                            <div class="py-2">
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-red text-white font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                            </div>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">The Class of 2020 Is All Dressed Up With
+                                Nowhere to Go</a></h3>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <article>
+                        <div>
+                            <div><a href="#"><img alt="d" class="img-fluid w-100"
+                                        src="img/fe-class-of-2020-sb-banner.webp"></a>
+                            </div>
+                            <div class="py-2">
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-red text-white font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                            </div>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">The Class of 2020 Is All Dressed Up With
+                                Nowhere to Go</a></h3>
+                    </article>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <article>
+                        <div>
+                            <div><a href="#"><img alt="d" class="img-fluid w-100"
+                                        src="img/us-president-donald-trump.webp"></a>
+                            </div>
+                            <div class="py-2">
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-red text-white font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                            </div>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">The Class of 2020 Is All Dressed Up With
+                                Nowhere to Go</a></h3>
+                    </article>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <article>
+                        <div>
+                            <div><a href="#"><img alt="d" class="img-fluid w-100"
+                                        src="img/dar-al-hekma-university-logo-1.jpg"></a></div>
+                            <div class="py-2">
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-red text-white font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                                <a class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4"
+                                    href="/us">U.S.</a>
+                            </div>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">The Class of 2020 Is All Dressed Up With
+                                Nowhere to Go</a></h3>
+                    </article>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 pb-4">
+                    <div>
+                        <div class="position-relative">
+                            <a class="hover-no-underline-red-text ab-bottom-left text-white bg-red font-weight-bold py-1 px-3 position-absolute"
+                                href="#">IN FOCUS</a>
+                            <a href="#"><img alt="d" class="img-fluid w-100" src="img/cul-cbd-banner.webp">
+                            </a>
+                        </div>
+                        <h3><a href="#" class="hover-red-underline-black-text">POTTER’S FIELD</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- editors editors-picks -->
+        <div class="editors-picks pt-4">
+            <div class="mb-3 pb-3 border-bottom text-center">
+                <span class="n-icon align-middle"></span>
+                <span class="text-uppercase font-weight-bold d-inline-block align-text-top">eDITOR'S
+                    PICK</span>
+            </div>
+            <div class="row">
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+                <article class="col-md-6 col-lg-3 col-xl-3 pb-4">
+                    <div class="position-relative">
+                        <a href="/us"
+                            class="hover-no-underline-red-text ab-bottom-left bg-white red font-weight-bold py-1 px-4 position-absolute">U.S.</a>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/doug-ducey.jpg"></a>
+                    </div>
+                    <h3><a href="#" class="hover-red-underline-black-text">Congressional Candidate Files Recall Petition
+                            for Arizona Governor </a></h3>
+                    <p>
+                        According to the Friday petition, Governor Ducey "committed a violation of his
+                        oath by issuing
+                        an unconstitutional executive order."
+                    </p>
+                </article>
+            </div>
+        </div>
+        <!-- sections-part -->
+        <div class="sections-part pt-4">
+            <div class="row border-top pt-4 mt-4">
+                <div class="col-12 pb-2"><a href="#" class="red font-weight-bold h4">U.S.</a></div>
+                <div class="col-lg-4 col-md-4">
+                    <article>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/sections-img.jpg"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <article>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/sections-img.jpg"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex pt-0 pb-2">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-4 mt-4">
+                <div class="col-12 pb-2"><a href="#" class="red font-weight-bold h4">Sports</a></div>
+                <div class="col-lg-4 col-md-4">
+                    <article>
+                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                src="img/michael-jordan-chicago-bulls.webp"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <article>
+                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                src="img/charles-barkley-michael-jordan.webp"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex pt-0 pb-2">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-4 mt-4">
+                <div class="col-12 pb-2"><a href="#" class="red font-weight-bold h4">Business</a></div>
+                <div class="col-lg-4 col-md-4">
+                    <article>
+                        <a href="#"><img alt="d" class="img-fluid w-100" src="img/per-fastcash.webp"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <article>
+                        <a href="#"><img alt="d" class="img-fluid w-100"
+                                src="img/shell-oil-coronavirus-slump-dividend-profits-price.webp"></a>
+                        <h4 class="mt-2 mb-4"><a href="#" class="hover-red-underline-black-text">Trump's White Christian
+                                Support Falls Amid COVID-19
+                                Lockdown:
+                                Poll</a></h4>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex pt-0 pb-2">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2 border border-left-0 border-right-0 border-bottom-0">
+                                <div>
+                                    <a href="#">
+                                        <img alt="d" class="img-fluid"
+                                            src="img/coronavirus-starbucks-california-april-2020.webp">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="hover-no-underline-red-text font-weight-bold">
+                                        Axelrod: Tara Reade Complaint Against Biden Never Came Up in 2008
+                                        Vetting
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe row -->
+        <div class="subscribe pt-4">
+            <div class="row">
+                <!-- subscribe -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="text-uppercase red font-weight-bold pb-2">Subscribe</div>
+                    <div class="d-lg-flex d-md-flex p-4">
+                        <div class="magazine-thumb-container">
+                            <div class="magazine-thumb under-cover">
+                                <img alt="d" class="img-fluid" src="img/subscribe-cover-2.jpg">
+                            </div>
+                            <div class="magazine-thumb up-cover">
+                                <img alt="d" class="img-fluid" src="img/subscribe-cover.jpg">
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                            <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
+                            <a href="#"><span
+                                    class="link bg-red text-light font-weight-bold text-uppercase pt-2 pr-2 pb-2 pl-3 d-inline-block">Subscribe</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NEWSLETTER -->
+                <div class="col-md-12 col-lg-4">
+                    <div class="text-uppercase red font-weight-bold pb-2">NEWSLETTER</div>
+                    <div class="d-flex">
+                        <div class="newsletter-bg-img col"></div>
+                        <!-- div to contain background image for subscribe -->
+                        <div class="col p-3 border">
+                            <h3>The Starting 5</h3>
+                            <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+                            </p>
+                            <a href="#"><span
+                                    class="link bg-red text-light font-weight-bold text-uppercase pt-2 pr-2 pb-2 pl-3 d-inline-block">Sign
+                                    Up</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="container-fluid pt-4">
+
+        <div class="row align-items-center">
+            <div class="d-flex col align-items-end">
+                <a class="brand" href="https://www.microverse.org">
+                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                        style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                        <g>
+                            <path class="st0"
+                                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="copyright">© 2020 Newsweek</p>
+            </div> <!-- logo ends -->
+            <ul class="social list-unstyled d-flex align-baseline text-secondary">
+                <li><a class=" px-1 fa fa-facebook" href="#"></a></li>
+                <li><a class=" px-1 fa fa-twitter" href="#"></a></li>
+                <li><a class=" px-1 fa fa-instagram" href="#"></a></li>
+                <li><a class=" px-1 fa fa-tumblr" href="#"></a></li>
+                <li><a class=" px-1 fa fa-linkedin" href="#"></a></li>
+            </ul>
+        </div>
+        <div class="border-top">
+            <div class="d-flex align-items-baseline">
+                <label class=" text-secondary"><strong>Editions:</strong></label>
+                <ul class="nav">
+                    <li><a class="nav-link hover-darken color-666" href="#">U.S. Edition</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">日本</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Pakistan</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Polska</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">România</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="nav">
+                    <li><a class="nav-link hover-darken color-666" href="#">About Us</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Corrections</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Contact Us</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Editorial Guidelines</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Advertise</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Copyright</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Terms &amp; Conditions</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Privacy Policy</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Cookie Policy</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Terms of Sale</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Archive</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Announcements</a></li>
+                    <li><a class="nav-link hover-darken color-666" href="#">Consent preferences</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- jQuery.js and popper.js dependencies and bootstrap.js-->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

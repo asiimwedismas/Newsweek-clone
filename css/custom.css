@@ -1,0 +1,207 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-some-color {
+  background-color: #c2d4d7;
+  padding: 0 6px;
+  font-size: 14px;
+}
+
+.bg-smokey {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.red {
+  color: red;
+}
+
+.color-666 {
+  color: #666;
+}
+
+.brand svg {
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  fill: #f72210;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.fa {
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.hover-red-underline-black-text:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: inherit;
+}
+
+.hover-no-underline-red-text:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.hover-no-effect:hover,
+.hover-darken:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hover-darken:hover {
+  color: black !important;
+}
+
+.ab-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.opinon-thumbnail {
+  width: 63px;
+  height: 63px;
+}
+
+.the-debate-thumbnail {
+  width: 95px;
+  height: 95px;
+}
+
+.c-vs {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}
+
+.title {
+  color: #272727;
+  font: 20px/22px "Lora", serif;
+  margin-bottom: 10px;
+}
+
+.summary {
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+  margin-bottom: 10px;
+}
+
+.newsletter-bg-img {
+  background: url("../img/starting5-homepage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.n-icon {
+  display: inline-block;
+  width: 29px;
+  height: 28px;
+  background: url("../img/n-icon.svg") center/contain no-repeat red;
+  margin-right: 10px;
+}
+
+.magazine-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+.magazine-thumb-container {
+  position: relative;
+  padding-right: 90px;
+}
+
+.magazine-thumb.up-cover {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.link::after,
+.link-red-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url("../img/link-arrow-right.svg") no-repeat;
+}
+
+.link-red-arrow::after {
+  background: url("../img/icon-arrow-right-red.svg") no-repeat;
+}
+
+.weather-icon {
+  vertical-align: text-top;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.radius-0 {
+  border-radius: 0;
+}
+
+.header-bottom::before {
+  position: absolute;
+  top: 0;
+  right: -11px;
+  content: "";
+  display: block;
+  width: 66px;
+  background-color: red;
+  border-left: 13px solid white;
+  border-top: 13px solid red;
+}
+
+.form-control {
+  background: url("../img/icon-search-glass.svg") center/contain no-repeat white;
+  background-size: 20px;
+}
+
+.top-logo {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .top-logo {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .top-logo {
+    max-width: 200px;
+  }
+}
